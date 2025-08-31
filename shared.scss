@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin dark-theme() {
+  --bg: rgb(36, 36, 36);
+  --bg0: rgb(30, 30, 30);
+  --bg1: rgb(45, 45, 50);
+  --fg: rgb(200, 200, 200);
+}
+
+@mixin light_theme() {
+  --bg:rgb(200, 200, 200);
+  --fg: rgb(36, 36, 36);
+}
+
+@media (prefers-color-scheme: dark) {
+  .user-theme {
+    @include dark-theme()
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .user-theme {
+    @include light-theme()
+  }
+}
+
+.dark-theme {
+  @include dark-theme()
+}
+
+.light-theme {
+  @include light-theme()
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--fg);
+
+  font-size: 20px;
+  font-family: "Roboto";
+  font-weight: normal;
+  width: 100%;
+}

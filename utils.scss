@@ -1,0 +1,53 @@
+.center-txt {
+  text-align: center;
+}
+
+/* flexbox */
+.center-div {
+  margin: auto;
+}
+
+.flexbox {
+  display: flex;
+}
+
+.fd-row {
+  flex-direction: row;
+}
+
+.fd-column {
+  flex-direction: column;
+}
+
+/* margins */
+.mgt1 {
+  margin-top: 1rem;
+}
+
+.mgt4 {
+  margin-top: 4rem;
+}
+
+.mgt5 {
+  margin-top: 5rem;
+}
+
+.mgt10 {
+  margin-top: 5rem;
+}
+
+.mgb1 {
+  margin-bottom: 1rem;
+}
+
+.mgb4 {
+  margin-bottom: 4rem;
+}
+
+.mgb5 {
+  margin-bottom: 5rem;
+}
+
+.mgb10 {
+  margin-bottom: 5rem;
+}
